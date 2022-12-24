@@ -4,7 +4,7 @@ import { BiSun, BiMoon } from "react-icons/bi";
 const Header = () => {
   return (
     <>
-      <nav className="flex items-center justify-between h-[60px] bg-white border-b-[1px] border-gray-200 px-4 lg:px-32 dark:bg-gray-900 fixed top-0 left-0 w-full z-20">
+      <nav className="flex items-center justify-between h-[60px] bg-white border-b-2 border-solid dark:border-gray-700 px-4 lg:px-32 dark:bg-gray-900 fixed top-0 left-0 w-full z-20">
         <NavLink to="/">
           <div className="flex gap-1 items-center">
             <img src="/images/favicon.png" className="h-12" />
