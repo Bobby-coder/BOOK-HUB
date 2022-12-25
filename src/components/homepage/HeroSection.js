@@ -12,7 +12,7 @@ const HeroSection = () => {
       if (search.trim() === "") {
       } else {
         let { data } = await axios.get(
-          `https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=40&key=AIzaSyAhGY-2G7H3XoXVn1szey9QjHpIQ9V60ro`
+          `https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=40&filter=ebooks&key=AIzaSyAhGY-2G7H3XoXVn1szey9QjHpIQ9V60ro`
         );
         setBookList(data.items);
       }
