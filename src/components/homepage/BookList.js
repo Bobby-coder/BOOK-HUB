@@ -14,7 +14,6 @@ const BookList = () => {
                 currEle.volumeInfo.imageLinks &&
                 currEle.volumeInfo.imageLinks.thumbnail
               }
-              publisher={currEle.volumeInfo?.publisher}
               id={currEle.id}
             />
           );
