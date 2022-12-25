@@ -9,8 +9,8 @@ const Header = () => {
           <div className="flex gap-1 items-center">
             <img src="/images/favicon.png" className="h-12" />
 
-            <h1 class="uppercase font-extrabold tracking-tight leading-none text-gray-900 text-2xl dark:text-white">
-              book<span class="text-blue-600 dark:text-blue-500">hub</span>
+            <h1 className="uppercase font-extrabold tracking-tight leading-none text-gray-900 text-2xl dark:text-white">
+              book<span className="text-blue-600 dark:text-blue-500">hub</span>
             </h1>
           </div>
         </NavLink>
