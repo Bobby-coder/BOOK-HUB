@@ -1,16 +1,16 @@
 import { useNavigate } from "react-router-dom";
 
-const SingleBook = ({ img, id, publisher }) => {
+const SingleBook = ({ img, id }) => {
   let history = useNavigate();
 
   return (
     <>
       <div>
         <div className="w-[180px] flex flex-col items-center gap-2 py-3 bg-white border border-gray-200 rounded-xs shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <img className="h-[230px]" src={img} alt="" />
+          <img className="h-[230px]" src={img} alt="book image" />
 
           <p className="font-normal text-center text-gray-700 dark:text-gray-400">
-             <strong>{publisher}</strong>
+             <strong></strong>
           </p>
           <p
             onClick={() => history(`/books/${id}`)}
