@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 const BookList = () => {
-  const { bookList, setBookList } = useBookContext();
+  const { bookList, setBookList, page } = useBookContext();
 
   const defaultSearch = async () => {
     try {
@@ -23,16 +23,18 @@ const BookList = () => {
 
   return (
     <>
-      <div className="flex justify-center flex-wrap gap-4 pb-16 bg-white dark:bg-gray-900">
-        {bookList.map((currEle) => {
+      <div className="flex justify-center flex-wrap gap-4 pb-10">
+        {bookList.slice(page * 10 - 10, page * 10).map((currEle) => {
           return (
-            <SingleBook
-              img={
-                currEle.volumeInfo.imageLinks &&
-                currEle.volumeInfo.imageLinks.thumbnail
-              }
-              id={currEle.id}
-            />
+            <div key={currEle.id}>
+              <SingleBook
+                img={
+                  currEle.volumeInfo.imageLinks &&
+                  currEle.volumeInfo.imageLinks.thumbnail
+                }
+                id={currEle.id}
+              />
+            </div>
           );
         })}
       </div>
