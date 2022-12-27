@@ -19,12 +19,14 @@ const SingleBookPage = () => {
 
   return (
     <>
-      <BookHeroSection
-        title={singleBookData.volumeInfo?.title}
-        description={singleBookData.volumeInfo?.description}
-        img={singleBookData.volumeInfo?.imageLinks?.small}
-        buyLink={singleBookData.saleInfo?.buyLink}
-      />
+      <div className="bg-white dark:bg-gray-900">
+        <BookHeroSection
+          title={singleBookData.volumeInfo?.title}
+          description={singleBookData.volumeInfo?.description}
+          img={singleBookData.volumeInfo?.imageLinks?.small}
+          buyLink={singleBookData.saleInfo?.buyLink}
+        />
+      </div>
     </>
   );
 };
