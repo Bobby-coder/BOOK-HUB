@@ -12,7 +12,7 @@ const HeroSection = () => {
       if (search.trim() === "") {
       } else {
         let { data } = await axios.get(
-          `https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=40&filter=ebooks&key=AIzaSyAhGY-2G7H3XoXVn1szey9QjHpIQ9V60ro`
+          `https://www.googleapis.com/books/v1/volumes?q=${search}&filter=paid-ebooks&maxResults=40&key=AIzaSyAhGY-2G7H3XoXVn1szey9QjHpIQ9V60ro`
         );
         setBookList(data.items);
       }
@@ -24,8 +24,8 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="flex justify-center bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 sm:px-16 xl:px-48 max-w-[1200px] text-center lg:py-16 bg-white dark:bg-gray-900 mt-[60px]">
+      <div className="flex justify-center">
+        <div className="py-8 px-4 sm:px-16 xl:px-48 max-w-[1200px] text-center lg:py-16 mt-[60px]">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             What should I read next ?
           </h1>
