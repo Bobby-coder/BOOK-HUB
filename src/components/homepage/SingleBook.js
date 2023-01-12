@@ -17,7 +17,7 @@ const SingleBook = ({ img, id }) => {
             target="_blank"
             className="cursor-pointer w-[110px] h-[28px] text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-sm text-sm flex justify-center items-center dark:focus:ring-[#1da1f2]/55"
           >
-            See More
+            See More Info
           </p>
         </div>
       </div>
